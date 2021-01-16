@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stick to Stickers..!!"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#6273D1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bg1"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/firstFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/firstFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstFrameName"
+                    android:text="28 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/firstFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/firstFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/matmaan" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baapkomatsikha" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/abesale" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pankajtripathi" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg5"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/secondFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Big Emojis"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/secondFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/secondFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondFrameNo"
+                    android:layout_margin="5dp"
+
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+
+
+                        android:src="@drawable/big1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/big2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/big3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/big4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thirdFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg3"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/thirdFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cricketers"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/thirdFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thirdFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/thirdFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/thirdFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thirdFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cric1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cric2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cric3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cric4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/forthFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg4"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/forthFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Romantic"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/forthFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/forthFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/forthFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/forthFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/forthFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rom1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rom2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rom3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rom4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fifthFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forthFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg2"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/fifthFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latest"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fifthFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fifthFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/fifthFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/fifthFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fifthFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/latest1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/latest2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/latest3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/latest4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sixthFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fifthFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg1"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/sixthFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bollywood"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/White" />
+
+                <TextView
+                    android:id="@+id/sixthFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sixthFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/sixthFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/sixthFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sixthFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/bol1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/bol2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/bol3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/bol4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/seventhFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sixthFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg5"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/seventhFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gangs of Wasseypur"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/White" />
+
+                <TextView
+                    android:id="@+id/seventhFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seventhFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/seventhFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/seventhFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seventhFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/gang1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/gang2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/gang3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/gang4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eightFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seventhFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg3"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/eightFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mirzapur"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/White" />
+
+                <TextView
+                    android:id="@+id/eightFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eightFrameName"
+                    android:text="23 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/eightFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/eightFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eightFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/mir1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/mir2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/mir3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/mir4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nineFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eightFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg4"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/nineFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standup Comedy"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/White" />
+
+                <TextView
+                    android:id="@+id/nineFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nineFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/nineFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/nineFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nineFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/stand1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/stand2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/stand3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/stand4" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tenFrameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nineFrameID"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg2"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tenFrameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Famous"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/White" />
+
+                <TextView
+                    android:id="@+id/tenFrameNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tenFrameName"
+                    android:text="20 Stickers"
+                    android:textColor="@color/White" />
+
+                <Button
+                    android:id="@+id/tenFrameAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:text="Add +"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/tenFrameImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tenFrameNo"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/fam1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/fam2" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/fam3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/fam4" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/elevenFrameID"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tenFrameID"-->
+        <!--            app:layout_constraintVertical_bias="0.0">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/elevenFrameName"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="eleven Frame Name"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/elevenFrameNo"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/elevenFrameName"-->
+        <!--                android:text="3 Stickers"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/elevenFrameAddBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:background="@drawable/button_background"-->
+        <!--                android:text="Add +"-->
+        <!--                android:textColor="#fff"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/elevenFrameImages"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/elevenFrameNo"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/first" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/second" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/third" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/fourth" />-->
+        <!--            </LinearLayout>-->
+        <!--        </RelativeLayout>-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/twelveFrameID"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/elevenFrameID"-->
+        <!--            app:layout_constraintVertical_bias="0.0">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/twelveFrameName"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="twelve Frame Name"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/twelveFrameNo"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/twelveFrameName"-->
+        <!--                android:text="3 Stickers"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/twelveFrameAddBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:background="@drawable/button_background"-->
+        <!--                android:text="Add +"-->
+        <!--                android:textColor="#fff"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/twelveFrameImages"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/twelveFrameNo"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/first" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/second" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/third" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/fourth" />-->
+        <!--            </LinearLayout>-->
+        <!--        </RelativeLayout>-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/thirteenFrameID"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/twelveFrameID"-->
+        <!--            app:layout_constraintVertical_bias="0.0">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/thirteenFrameName"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="thirteen Frame Name"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/thirteenFrameNo"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/thirteenFrameName"-->
+        <!--                android:text="3 Stickers"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/thirteenFrameAddBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:background="@drawable/button_background"-->
+        <!--                android:text="Add +"-->
+        <!--                android:textColor="#fff"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/thirteenFrameImages"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/thirteenFrameNo"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/first" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/second" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/third" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/fourth" />-->
+        <!--            </LinearLayout>-->
+        <!--        </RelativeLayout>-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/fourteenFrameID"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/thirteenFrameID"-->
+        <!--            app:layout_constraintVertical_bias="0.0">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/fourteenFrameName"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="fourteen Frame Name"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/fourteenFrameNo"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/fourteenFrameName"-->
+        <!--                android:text="3 Stickers"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/fourteenFrameAddBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:background="@drawable/button_background"-->
+        <!--                android:text="Add +"-->
+        <!--                android:textColor="#fff"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/fourteenFrameImages"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/fourteenFrameNo"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/first" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/second" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/third" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/fourth" />-->
+        <!--            </LinearLayout>-->
+        <!--        </RelativeLayout>-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/fifteenFrameID"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/fourteenFrameID"-->
+        <!--            app:layout_constraintVertical_bias="0.0">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/fifteenFrameName"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="fifteen Frame Name"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/fifteenFrameNo"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/fifteenFrameName"-->
+        <!--                android:text="3 Stickers"-->
+        <!--                android:textColor="@color/White" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/fifteenFrameAddBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:background="@drawable/button_background"-->
+        <!--                android:text="Add +"-->
+        <!--                android:textColor="#fff"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/fifteenFrameImages"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/fifteenFrameNo"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/first" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/second" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/third" />-->
+
+        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                    android:layout_width="45dp"-->
+        <!--                    android:layout_height="45dp"-->
+        <!--                    android:layout_margin="5dp"-->
+        <!--                    android:src="@drawable/fourth" />-->
+        <!--            </LinearLayout>-->
+        <!--        </RelativeLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
